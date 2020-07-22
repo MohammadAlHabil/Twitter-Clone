@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Twitter</title>
+	<link rel="icon" type="image/png" href="../images/logo.svg">
+	<link rel="stylesheet" href="../css/twitter-clone.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+
+<body>
+
+	<header class="main">
+
+		<div class="content">
+			<span id="time"></span>
+			<nav>
+				<ul>
+					<li><object data="../images/home.svg" type="image/svg+xml"></object>Home</li>
+					<li><object data="../images/notification.svg" type="image/svg+xml"></object>Notification</li>
+					<li><object data="../images/message.svg" type="image/svg+xml"></object>Messages</li>
+				</ul>
+			</nav>
+
+			<object data="../images/logo.svg" type="image/svg+xml" alt="Logo twitter"></object>
+
+			<div class="side">
+				<input type="text" placeholder="Search Twitter">
+				<img src="../images/person.jpg" alt="">
+				<button>Tweets</button>
+			</div>
+		</div>
+	</header>
+
+	<div class="banner">
+		<h1>Twitter</h1>
+	</div>
+
+	<div class="bar">
+		<div class="content">
+			<ul>
+				<li class="active">
+					<span>Tweets</span>
+					<strong>20</strong>
+				</li>
+				<li>
+					<span>following</span>
+					<strong>126</strong>
+				</li>
+				<li><span>follower</span>
+					<strong>34</strong>
+				</li>
+				<li><span>Favorites</span>
+					<strong>113</strong>
+				</li>
+			</ul>
+			<div class="action">
+				<button>Edit Profile</button>
+				<object data="../images/more.svg" type="image/svg+xml" alt="More"></object>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper content">
+		<aside class="profile">
+			<img src="../images/person.jpg" alt="user image" class="avatar">
+			<h1>mohammad</h1>
+			<p>@moh</p>
+			<span>Bio</span>
+			<ul class="list">
+				<li><object data="../images/place.svg" type="image/svg+xml"></object>Palestine</li>
+				<li><object data="../images/url.svg" type="image/svg+xml"></object>Web.com</li>
+				<li><object data="../images/joined.svg" type="image/svg+xml"></object>Joined June 2020</li>
+				<li><object data="../images/born.svg" type="image/svg+xml"></object>Birthday</li>
+			</ul>
+
+			<div class="widget images">
+				<strong><object data="../images/followers.svg" type="image/svg+xml"></object>13 Photos and Videos</strong>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</aside>
+		<section class="timeline">
+			<nav>
+				<a href="#" class="active">Tweets</a>
+				<a href="#">Tweets &amp; replies</a>
+				<a href="#">Media</a>
+				<a href="#">Like</a>
+			</nav>
+			<div class="write-tweets">
+				<input type="text" placeholder="Username" id="name">
+				<div class="img-inp">
+					<img src="../images/person.jpg" alt="user">
+					<textarea id="write" placeholder="What's happening?"></textarea>
+
+				</div>
+				<div class="icon-but">
+					<ul>
+						<li><a href="#"><object data="../images/img.svg" type="image/svg+xml"></object></a></li>
+						<li><a href="#"><object data="../images/smile.svg" type="image/svg+xml"></object></a></li>
+						<li><a herf="#"><object data="../images/calendar.svg" type="image/svg+xml"></object></a></li>
+					</ul>
+					<button id="create" onclick="createTweet()">Tweet</button>
+				</div>
+			</div>
+			<ul class="tweets" id="show">
+
+				<li class="test" id="showsmall">
+					<img src="../images/person.jpg" alt="user image">
+					<div class="info">
+						<strong id="name">mohammad</strong>
+						<p id="written">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						<div class="actions">
+							<a href="#"><i class="material-icons">thumb_up</i></a>
+							<a href="#"><i class="material-icons">comment</i></a>
+							<a title="retweet" onclick="retweet(this)"><i class="fa fa-retweet"></i></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<aside class="widgets">
+			<div class="widget follow">
+				<div class="title"><strong>Who to follow</strong></div>
+				<ul>
+					<li>
+						<div>
+							<img src="../images/sun.jpg" alt="user image">
+							<div>
+								<strong>user<span>@user</span></strong>
+								<button>follow</button>
+							</div>
+						</div>
+						<a href="#">X</a>
+					</li>
+					<li>
+						<div>
+							<img src="../images/sun.jpg" alt="user image">
+							<div>
+								<strong>user<span>@user</span></strong>
+								<button>follow</button>
+							</div>
+						</div>
+						<a href="#">X</a>
+					</li>
+					<li>
+						<div>
+							<img src="../images/sun.jpg" alt="user image">
+							<div>
+								<strong>user<span>@user</span></strong>
+								<button>follow</button>
+							</div>
+						</div>
+						<a href="#">X</a>
+					</li>
+					<li>
+						<div>
+							<img src="../images/sun.jpg" alt="user image">
+							<div>
+								<strong>user<span>@user</span></strong>
+								<button>follow</button>
+							</div>
+						</div>
+						<a href="#">X</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+	</div>
+	<script src="../js/twitter-clone.js"></script>
+</body></html>

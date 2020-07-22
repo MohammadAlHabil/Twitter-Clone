@@ -1,0 +1,554 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #E6ECF0;
+	font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+
+input,
+button {
+	outline: 0;
+}
+
+.content {
+	max-width: 1170px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+a {
+	cursor: pointer;
+}
+
+.main {
+	height: 46px;
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+	position: relative;
+	z-index: 1;
+}
+
+.main .content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.main .content nav ul {
+	list-style: none;
+	display: flex;
+}
+
+.main .content nav ul li {
+	display: flex;
+	align-items: center;
+	margin-left: 30px;
+	font-size: 13px;
+	color: #667580;
+	font-weight: bold;
+}
+
+.main .content nav ul li:hover {
+	color: #3bb9e3;
+}
+
+.main .content nav ul li:first-child {
+	margin-left: 0px;
+}
+
+.main .content nav ul li object {
+	margin-right: 7px;
+}
+
+.main .content object {
+	display: flex;
+}
+
+.main .content .side {
+	display: flex;
+
+}
+
+.main .content .side input {
+	width: 220px;
+	border: 1px solid #E6ecf0;
+	height: 34px;
+	padding: 0 30px 0 12px;
+	border-radius: 16px;
+	color: #667581;
+	font-size: 12px;
+	background: url('../images/search.png') no-repeat 180px center;
+}
+
+.main .content .side input:focus {
+	border-color: #3bb9e3;
+	background-size: 30px;
+}
+
+.main .content .side img {
+	height: 34px;
+	width: 34px;
+	border-radius: 50%;
+	margin: 0 15px;
+}
+
+.main .content .side img:hover {
+	transform: scale(1.1);
+	transition: transform .3s ease-out;
+}
+
+.main .content .side button {
+	height: 34px;
+	background: #3bb9e3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 90px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+	border: 0;
+	border-radius: 16px;
+}
+
+.main .content .side button:hover {
+	background-color: #fff;
+	border: 1px solid #3bb9e3;
+	color: #3bb9e3;
+}
+
+.banner {
+	height: 300px;
+	width: 100%;
+	background: #3bb9e3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+.bar {
+	height: 59px;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.bar .content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	padding-left: 285px;
+
+}
+
+.bar .content ul {
+	display: flex;
+	list-style: none;
+	position: relative;
+	height: 100%;
+}
+
+.bar .content ul li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 15px;
+	position: relative;
+}
+
+.bar .content ul li.active::after {
+	content: "";
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #3bb9e3;
+}
+
+.bar .content ul li span {
+	color: #667580;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.bar .content ul li strong {
+	color: #667580;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 2px;
+}
+
+.bar .content ul li.active strong {
+	color: #3bb9e3;
+}
+
+.bar .content .action {
+	display: flex;
+	align-items: center;
+}
+
+.bar .content .action button {
+	height: 34px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 90px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #3bb9e3;
+	border: 1px solid #3bb9e3;
+	border-radius: 16px;
+	margin-right: 20px;
+	background-color: #f5f5f5;
+}
+
+.wrapper {
+	display: flex;
+}
+
+.profile {
+	width: 260px;
+
+}
+
+.profile .avatar {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	margin-top: -130px;
+}
+
+
+.profile h1 {
+	font-size: 21px;
+	color: #1f2226;
+	margin-top: 10px;
+}
+
+.profile span {
+	font-size: 14px;
+	color: #53626c;
+}
+
+.profile p {
+	font-size: 14px;
+	color: #1f2226;
+	margin-top: 15px;
+}
+
+.profile ul {
+	margin-top: 20px;
+	list-style: none;
+}
+
+.profile .list li {
+	font-size: 14px;
+	color: #657786;
+	display: flex;
+	align-items: center;
+	margin-top: 5px;
+}
+
+.profile .list li:first-child {
+	margin: 0;
+}
+
+.profile .list li object {
+	margin-right: 10px;
+}
+
+.profile .widget {
+	margin-top: 20px;
+}
+
+.profile .widget strong {
+	font-weight: normal;
+	color: #38b9e3;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+}
+
+.profile .widget strong object {
+	margin-right: 5px;
+}
+
+.profile .images ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.profile .images ul li {
+	width: 80px;
+	height: 80px;
+	background: #d0d5d9;
+	border-radius: 8px;
+	flex: 1 0 auto;
+	margin: 0 3px 5px;
+}
+
+.timeline {
+	width: 550px;
+	background: #fff;
+	margin: 10px 20px;
+}
+
+.timeline nav {
+	border-bottom: 1px solid #e6ecf0;
+	padding: 10px 15px;
+}
+
+.timeline nav a {
+	text-decoration: none;
+	color: #667580;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.timeline nav a:first-child {
+	margin: 0;
+}
+
+.timeline nav .active {
+	color: #3bb9e3;
+}
+
+.timeline ul {
+	list-style: none;
+
+	flex-direction: column;
+	display: flex;
+}
+
+.timeline .tweets li {
+	border-bottom: 1px solid #e6ecf0;
+	padding: 10px 15px;
+	display: flex;
+}
+
+.timeline .tweets li img {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+}
+
+.timeline .tweets li .info {
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.timeline .tweets li .info strong {
+	font-size: 14px;
+	color: #1f2226;
+}
+
+
+
+.timeline .tweets li .info strong span {
+	font-size: 14x;
+	color: #1f2226;
+	margin-top: 5px;
+}
+
+.timeline .tweets li .info p {
+	font-size: 13px;
+	color: #1f2226;
+	margin-top: 5px;
+}
+
+.timeline .tweets li .actions {
+	display: flex;
+	margin-top: 10px;
+}
+
+.timeline .tweets li .actions a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #667580;
+	font-weight: bold;
+	font-size: 12px;
+	margin-left: 20px;
+}
+
+.timeline .tweets li .actions a:first-child {
+	margin-left: 0;
+}
+
+.timeline .tweets li .actions a i {
+	margin-right: 5px;
+	color: #3bb9e3;
+	opacity: 0.8;
+	font-size: 20px;
+}
+
+
+
+.write-tweets {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #e6ecf0;
+}
+
+.write-tweets:hover {
+	background-color: #f5f5f5;
+}
+
+.img-inp,
+.icon-but {
+	display: flex;
+	align-items: center;
+	padding: 5
+}
+
+.icon-but {
+	display: flex;
+	justify-content: space-between;
+}
+
+.write-tweets img {
+	border-radius: 50px;
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+}
+
+.write-tweets textarea {
+	margin: 10px;
+	padding: 10px;
+	width: 100%;
+	resize: none;
+	border: none;
+	font-size: 16px;
+	outline: 0;
+	line-height: 17px;
+	word-spacing: -5px;
+}
+
+.icon-but ul {
+	display: flex;
+	list-style: none;
+	flex-direction: row;
+	margin-left: 55px;
+}
+
+.icon-but ul li {
+	margin-left: 15px;
+	width: 20px;
+	height: 20px;
+}
+
+
+.icon-but button {
+	height: 34px;
+	background: #3bb9e3;
+	width: 90px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+	border: 0;
+	border-radius: 16px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.icon-but button:hover {
+	background-color: #fff;
+	border: 1px solid #3bb9e3;
+	color: #3bb9e3;
+}
+
+.widgets {
+	width: 280px;
+	background-color: #fff;
+	margin-top: 10px;
+	height: 100%;
+}
+
+.follow .title {
+	margin: 10px
+}
+
+.follow ul {
+	list-style: none;
+
+}
+
+.follow ul li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccd6dd;
+	padding: 10px 0px;
+}
+
+.follow ul li div {
+	display: flex;
+	margin-left: 10px
+}
+
+.follow ul li div div {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.follow ul li div img {
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 50px;
+
+}
+
+.follow ul li div div strong {
+	font-size: 14px;
+	color: #1f2326;
+}
+
+.follow ul li div div span {
+	font-weight: normal;
+	color: #9a9a9a;
+}
+
+.follow ul li div div button {
+	background-color: #f5f5f5;
+	margin-top: 5px;
+	height: 27px;
+	width: 90px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #3bb9e3;
+	border: 1px solid #3bb9e3;
+	border-radius: 16px;
+}
+
+.follow ul li a {
+	margin-right: 10px;
+	color: #ccd6dd;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.write-tweets input {
+	outline: 0;
+	border: 1px solid #eee;
+	margin: 10px;
+	margin-bottom: 0px;
+	height: 30px;
+	padding: 20px;
+}
